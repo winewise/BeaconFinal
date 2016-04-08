@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PSW-xI-jEz">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Color Picker-->
+        <scene sceneID="nT9-dO-yJR">
+            <objects>
+                <viewController id="YCZ-M0-p1L" customClass="ColorPickerViewController" customModule="Proximity" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VbK-Ip-xxT"/>
+                        <viewControllerLayoutGuide type="bottom" id="ojj-xr-b6S"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xlb-ok-oT9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ui-he-XyE" customClass="ColorPicker" customModule="Proximity" customModuleProvider="target">
+                                <rect key="frame" x="20" y="84" width="560" height="426"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X7D-OK-haT" customClass="ColorWell" customModule="Proximity" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="10" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="9Hc-Fh-Dk5"/>
+                                            <constraint firstAttribute="height" constant="70" id="uVd-1P-bx4"/>
+                                        </constraints>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="0Kb-6W-UPU"/>
+                                    <constraint firstAttribute="height" constant="500" id="Smt-qT-jMN"/>
+                                    <constraint firstItem="X7D-OK-haT" firstAttribute="top" secondItem="7ui-he-XyE" secondAttribute="top" constant="10" id="WES-tS-OeY"/>
+                                    <constraint firstItem="X7D-OK-haT" firstAttribute="leading" secondItem="7ui-he-XyE" secondAttribute="leading" constant="10" id="hbK-F5-TR8"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="0Kb-6W-UPU"/>
+                                        <exclude reference="Smt-qT-jMN"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="0Kb-6W-UPU"/>
+                                        <include reference="Smt-qT-jMN"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WYf-4q-DC3" customClass="HuePicker" customModule="Proximity" customModuleProvider="target">
+                                <rect key="frame" x="20" y="530" width="560" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="YNn-Od-I2Z"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="WYf-4q-DC3" secondAttribute="trailing" constant="20" id="57U-Qu-BSa"/>
+                            <constraint firstItem="7ui-he-XyE" firstAttribute="centerX" secondItem="xlb-ok-oT9" secondAttribute="centerX" id="A5i-tq-C47"/>
+                            <constraint firstItem="7ui-he-XyE" firstAttribute="leading" secondItem="xlb-ok-oT9" secondAttribute="leading" constant="20" id="CLX-VF-9Kc"/>
+                            <constraint firstItem="7ui-he-XyE" firstAttribute="top" secondItem="VbK-Ip-xxT" secondAttribute="bottom" constant="20" id="EoI-3k-oOe"/>
+                            <constraint firstItem="WYf-4q-DC3" firstAttribute="leading" secondItem="xlb-ok-oT9" secondAttribute="leading" constant="20" id="Jcn-YD-O2E"/>
+                            <constraint firstItem="WYf-4q-DC3" firstAttribute="top" secondItem="7ui-he-XyE" secondAttribute="bottom" constant="20" id="cgW-O2-TjG"/>
+                            <constraint firstAttribute="trailing" secondItem="7ui-he-XyE" secondAttribute="trailing" constant="20" id="oAG-VP-7hr"/>
+                            <constraint firstItem="ojj-xr-b6S" firstAttribute="top" secondItem="WYf-4q-DC3" secondAttribute="bottom" constant="20" id="vVa-zO-UG9"/>
+                        </constraints>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="A5i-tq-C47"/>
+                                <exclude reference="CLX-VF-9Kc"/>
+                                <include reference="EoI-3k-oOe"/>
+                                <exclude reference="oAG-VP-7hr"/>
+                                <exclude reference="cgW-O2-TjG"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Color Picker" id="sMU-bd-AOj"/>
+                    <connections>
+                        <outlet property="colorPicker" destination="7ui-he-XyE" id="7ni-Rp-TSj"/>
+                        <outlet property="colorWell" destination="X7D-OK-haT" id="o9b-zJ-YdN"/>
+                        <outlet property="huePicker" destination="WYf-4q-DC3" id="HXs-K4-2Lu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0kR-lU-te0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2306" y="-1851"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ky0-PX-hlA">
+            <objects>
+                <navigationController storyboardIdentifier="ColorPickerNavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PSW-xI-jEz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lep-t0-Rct">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YCZ-M0-p1L" kind="relationship" relationship="rootViewController" id="PZK-M2-ffz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lfz-CS-pnH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1584" y="-1851"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="14F27" minimumToolsVersion="Xcode 4.3">
+    <entity name="Beacon" representedClassName="Beacon" syncable="YES">
+        <attribute name="accuracy" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="color" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="companyId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="companyName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createdOn" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="macAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="major" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="minor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nickName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notifyTextFar" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notifyTextNear" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notifyTitleFar" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notifyTitleNear" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rssi" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unit" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="urlFar" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="urlNear" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="beaconState" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BeaconState" syncable="YES"/>
+        <relationship name="urlFarContent" optional="YES" maxCount="1" deletionRule="No Action" destinationEntity="UrlContent" syncable="YES"/>
+        <relationship name="urlNearContent" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="UrlContent" syncable="YES"/>
+    </entity>
+    <entity name="BeaconState" representedClassName=".BeaconState" syncable="YES">
+        <attribute name="exitProximity" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="exitRange" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="inProximity" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="inRange" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="lastSeenFar" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="lastSeenNear" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <entity name="BeaconType" representedClassName=".BeaconType" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="manufacturer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="usable" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="visible" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <entity name="Company" representedClassName=".Company" syncable="YES">
+        <attribute name="color" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idHash" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="HashState" representedClassName=".HashState" syncable="YES">
+        <attribute name="hashString" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="UrlContent" representedClassName="UrlContent" syncable="YES">
+        <attribute name="errorCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="errorDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="html" optional="YES" attributeType="Binary" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Beacon" positionX="-459" positionY="-279" width="117" height="405"/>
+        <element name="BeaconState" positionX="-333" positionY="-126" width="128" height="135"/>
+        <element name="BeaconType" positionX="-333" positionY="-126" width="128" height="135"/>
+        <element name="Company" positionX="-333" positionY="-126" width="128" height="135"/>
+        <element name="HashState" positionX="-209" positionY="-63" width="128" height="60"/>
+        <element name="UrlContent" positionX="-209" positionY="-277" width="128" height="90"/>
+    </elements>
+</model>

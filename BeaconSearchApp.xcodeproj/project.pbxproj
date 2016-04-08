@@ -1,0 +1,1408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A2B55F81C23A6230018E985 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2B55F71C23A6230018E985 /* HeaderCell.swift */; };
+		5A2C0C121BD43BCC00612A6A /* BeaconSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD28E8C1BD313B2003F57EC /* BeaconSearch.framework */; };
+		5A2C0C131BD43BCC00612A6A /* BeaconSearch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD28E8C1BD313B2003F57EC /* BeaconSearch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5A2C0C1E1BD43C3C00612A6A /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A2C0C171BD43C3C00612A6A /* ParseCrashReporting.framework */; };
+		5A2C0C211BD43C3C00612A6A /* ParseTwitterUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A2C0C1A1BD43C3C00612A6A /* ParseTwitterUtils.framework */; };
+		5A2C0C221BD43C3C00612A6A /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A2C0C1B1BD43C3C00612A6A /* ParseUI.framework */; };
+		5A2C0C231BD43C3C00612A6A /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A2C0C1C1BD43C3C00612A6A /* Bolts.framework */; };
+		5A2C0C241BD43C3C00612A6A /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A2C0C1D1BD43C3C00612A6A /* Parse.framework */; };
+		5A2C0C261BD43F6300612A6A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A2C0C251BD43F6300612A6A /* CoreLocation.framework */; };
+		5A2C0C281BD43F6A00612A6A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A2C0C271BD43F6A00612A6A /* StoreKit.framework */; };
+		5A2C0C2A1BD43F7700612A6A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A2C0C291BD43F7700612A6A /* CoreGraphics.framework */; };
+		5A2C0C2C1BD43F8300612A6A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A2C0C2B1BD43F8300612A6A /* QuartzCore.framework */; };
+		5A2C0C301BD43FE700612A6A /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A2C0C2F1BD43FE700612A6A /* Accounts.framework */; };
+		5A2C0C321BD43FEF00612A6A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A2C0C311BD43FEF00612A6A /* AudioToolbox.framework */; };
+		5A2C0C341BD43FF500612A6A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A2C0C331BD43FF500612A6A /* CFNetwork.framework */; };
+		5A2C0C361BD43FFD00612A6A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A2C0C351BD43FFD00612A6A /* Security.framework */; };
+		5A2C0C381BD4400600612A6A /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A2C0C371BD4400600612A6A /* Social.framework */; };
+		5A2C0C3A1BD4401A00612A6A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A2C0C391BD4401A00612A6A /* SystemConfiguration.framework */; };
+		5A2C0C3C1BD4402100612A6A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A2C0C3B1BD4402100612A6A /* libz.tbd */; };
+		5A2C0C3E1BD4402C00612A6A /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A2C0C3D1BD4402C00612A6A /* libsqlite3.tbd */; };
+		5A3E2C9E1C1003D70057C044 /* Company+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E2C9C1C1003D70057C044 /* Company+CoreDataProperties.swift */; };
+		5A3E2C9F1C1003D70057C044 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E2C9D1C1003D70057C044 /* Company.swift */; };
+		5A3E2CA11C100AB50057C044 /* SelectCompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E2CA01C100AB50057C044 /* SelectCompanyViewController.swift */; };
+		5AA86E641BE1CAC300067E6D /* ClosestBeaconsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA86E631BE1CAC300067E6D /* ClosestBeaconsViewController.swift */; };
+		5AB43C0A1C22645F003504DB /* BeaconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB43C091C22645F003504DB /* BeaconCell.swift */; };
+		5AB43C0C1C22796E003504DB /* SelectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB43C0B1C22796E003504DB /* SelectCell.swift */; };
+		5AB43C0E1C22797D003504DB /* ColorPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB43C0D1C22797D003504DB /* ColorPickerCell.swift */; };
+		5AB983C81BEC50BC003130A3 /* CompanyBeaconsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB983C71BEC50BC003130A3 /* CompanyBeaconsViewController.swift */; };
+		5AC576741BA7A1B3001D1B39 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AC576731BA7A1B3001D1B39 /* CoreData.framework */; };
+		5AD28E8F1BD313B2003F57EC /* BeaconSearch.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AD28E8E1BD313B2003F57EC /* BeaconSearch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5AD28EA41BD313FB003F57EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD28E9A1BD313FB003F57EC /* AppDelegate.swift */; };
+		5AD28EA51BD313FB003F57EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AD28E9B1BD313FB003F57EC /* Assets.xcassets */; };
+		5AD28EA61BD313FB003F57EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AD28E9C1BD313FB003F57EC /* LaunchScreen.storyboard */; };
+		5AD28EA71BD313FB003F57EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AD28E9E1BD313FB003F57EC /* Main.storyboard */; };
+		5AD28EA81BD313FB003F57EC /* BeaconDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD28EA01BD313FB003F57EC /* BeaconDetailViewController.swift */; };
+		5AD28EAA1BD313FB003F57EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD28EA21BD313FB003F57EC /* ViewController.swift */; };
+		5AD28EAB1BD313FB003F57EC /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD28EA31BD313FB003F57EC /* WebViewController.swift */; };
+		5AD28EB71BD3144E003F57EC /* FindBeacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD28EAC1BD3144E003F57EC /* FindBeacon.swift */; };
+		5AD28EB81BD3144E003F57EC /* BeaconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD28EAD1BD3144E003F57EC /* BeaconManager.swift */; };
+		5AD28EB91BD3144E003F57EC /* Beacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD28EAE1BD3144E003F57EC /* Beacon.swift */; };
+		5AD28EBA1BD3144E003F57EC /* UrlContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD28EAF1BD3144E003F57EC /* UrlContent.swift */; };
+		5AD28EBB1BD3144E003F57EC /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD28EB01BD3144E003F57EC /* DataController.swift */; };
+		5AD28EBC1BD3144E003F57EC /* UrlContent+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD28EB11BD3144E003F57EC /* UrlContent+CoreDataProperties.swift */; };
+		5AD28EBD1BD3144E003F57EC /* Beacon+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD28EB21BD3144E003F57EC /* Beacon+CoreDataProperties.swift */; };
+		5AD28EBE1BD3144E003F57EC /* BeaconModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5AD28EB31BD3144E003F57EC /* BeaconModel.xcdatamodeld */; };
+		5AD28EBF1BD3144E003F57EC /* HashState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD28EB51BD3144E003F57EC /* HashState.swift */; };
+		5AD28EC01BD3144E003F57EC /* HashState+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD28EB61BD3144E003F57EC /* HashState+CoreDataProperties.swift */; };
+		5AD619641BDF23B100B551A8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD619631BDF23B100B551A8 /* MapViewController.swift */; };
+		5AD619661BDF241A00B551A8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD619651BDF241A00B551A8 /* MapKit.framework */; };
+		5AD693D91C0560C10049CFFE /* libKeenClient-Aggregate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD693D81C0560C10049CFFE /* libKeenClient-Aggregate.a */; };
+		5AD693E01C07FDD10049CFFE /* BeaconState+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD693DE1C07FDD10049CFFE /* BeaconState+CoreDataProperties.swift */; };
+		5AD693E11C07FDD10049CFFE /* BeaconState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD693DF1C07FDD10049CFFE /* BeaconState.swift */; };
+		5AD9165B1BD46789005D1CE4 /* Apache License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5AD916501BD46789005D1CE4 /* Apache License.txt */; };
+		5AD9165C1BD46789005D1CE4 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5AD916511BD46789005D1CE4 /* OpenSans-Bold.ttf */; };
+		5AD9165D1BD46789005D1CE4 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5AD916521BD46789005D1CE4 /* OpenSans-BoldItalic.ttf */; };
+		5AD9165E1BD46789005D1CE4 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5AD916531BD46789005D1CE4 /* OpenSans-ExtraBold.ttf */; };
+		5AD9165F1BD46789005D1CE4 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5AD916541BD46789005D1CE4 /* OpenSans-ExtraBoldItalic.ttf */; };
+		5AD916601BD46789005D1CE4 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5AD916551BD46789005D1CE4 /* OpenSans-Italic.ttf */; };
+		5AD916611BD46789005D1CE4 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5AD916561BD46789005D1CE4 /* OpenSans-Light.ttf */; };
+		5AD916621BD46789005D1CE4 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5AD916571BD46789005D1CE4 /* OpenSans-LightItalic.ttf */; };
+		5AD916631BD46789005D1CE4 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5AD916581BD46789005D1CE4 /* OpenSans-Regular.ttf */; };
+		5AD916641BD46789005D1CE4 /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5AD916591BD46789005D1CE4 /* OpenSans-Semibold.ttf */; };
+		5AD916651BD46789005D1CE4 /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5AD9165A1BD46789005D1CE4 /* OpenSans-SemiboldItalic.ttf */; };
+		5AD916671BD47008005D1CE4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD916661BD47008005D1CE4 /* LoginViewController.swift */; };
+		5AD9166A1BD47107005D1CE4 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD916681BD47107005D1CE4 /* FBSDKLoginKit.framework */; };
+		5AD9166B1BD47107005D1CE4 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD916691BD47107005D1CE4 /* FBSDKCoreKit.framework */; };
+		5AD916701BD475E0005D1CE4 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD9166E1BD475E0005D1CE4 /* ParseFacebookUtils.framework */; };
+		5AD916711BD475E0005D1CE4 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD9166F1BD475E0005D1CE4 /* ParseFacebookUtilsV4.framework */; };
+		5ADE508F1BD358AF009B8D24 /* BeaconSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADE508E1BD358AF009B8D24 /* BeaconSearchTests.swift */; };
+		5ADE50911BD358AF009B8D24 /* BeaconSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD28E8C1BD313B2003F57EC /* BeaconSearch.framework */; };
+		5AFAEDD91BDDAC7C0087AD24 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFAEDD81BDDAC7C0087AD24 /* MainTabBarController.swift */; };
+		AE18F7361C7D735900567797 /* ColorPicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE18F7351C7D735900567797 /* ColorPicker.storyboard */; };
+		AE291EB81C61782E00D4D524 /* ConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE291EB71C61782E00D4D524 /* ConnectViewController.swift */; };
+		AE291EBA1C617FEB00D4D524 /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE291EB91C617FEB00D4D524 /* Chat.storyboard */; };
+		AE291EBC1C61811D00D4D524 /* PeerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE291EBB1C61811D00D4D524 /* PeerCell.swift */; };
+		AE2B617C1C5167D100FD0471 /* ColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2B61771C5167D100FD0471 /* ColorPicker.swift */; };
+		AE2B617D1C5167D100FD0471 /* ColorPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2B61781C5167D100FD0471 /* ColorPickerController.swift */; };
+		AE2B617E1C5167D100FD0471 /* ColorWell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2B61791C5167D100FD0471 /* ColorWell.swift */; };
+		AE2B617F1C5167D100FD0471 /* HuePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2B617A1C5167D100FD0471 /* HuePicker.swift */; };
+		AE2B61801C5167D100FD0471 /* PickerImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2B617B1C5167D100FD0471 /* PickerImage.swift */; };
+		AE2B61821C51A37D00FD0471 /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2B61811C51A37D00FD0471 /* ColorPickerViewController.swift */; };
+		AE3ADDBD1C4C4CD0009C3678 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE3ADDBC1C4C4CD0009C3678 /* CoreBluetooth.framework */; };
+		AE3ADDC01C4CA58D009C3678 /* String+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3ADDBF1C4CA58D009C3678 /* String+Utility.swift */; };
+		AE3EFA6C1C5AEDE400A61D0A /* BeaconType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3EFA6A1C5AEDE400A61D0A /* BeaconType+CoreDataProperties.swift */; };
+		AE3EFA6D1C5AEDE400A61D0A /* BeaconType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3EFA6B1C5AEDE400A61D0A /* BeaconType.swift */; };
+		AE4A4F821C8503700016F0A2 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4A4F811C8503700016F0A2 /* MessageCell.swift */; };
+		AE59E6CD1C6D84EC002A1A4E /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE59E6CC1C6D84EC002A1A4E /* Settings.storyboard */; };
+		AE59E6CF1C6D8AB3002A1A4E /* UploadImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE59E6CE1C6D8AB3002A1A4E /* UploadImageCell.swift */; };
+		AE6D94DE1BE9A36D00B70740 /* FBAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6D94D71BE9A36D00B70740 /* FBAnnotation.swift */; };
+		AE6D94DF1BE9A36D00B70740 /* FBAnnotationCluster.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6D94D81BE9A36D00B70740 /* FBAnnotationCluster.swift */; };
+		AE6D94E01BE9A36D00B70740 /* FBAnnotationClusterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6D94D91BE9A36D00B70740 /* FBAnnotationClusterView.swift */; };
+		AE6D94E11BE9A36D00B70740 /* FBBoundingBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6D94DA1BE9A36D00B70740 /* FBBoundingBox.swift */; };
+		AE6D94E21BE9A36D00B70740 /* FBClusteringManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6D94DB1BE9A36D00B70740 /* FBClusteringManager.swift */; };
+		AE6D94E31BE9A36D00B70740 /* FBQuadTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6D94DC1BE9A36D00B70740 /* FBQuadTree.swift */; };
+		AE6D94E41BE9A36D00B70740 /* FBQuadTreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6D94DD1BE9A36D00B70740 /* FBQuadTreeNode.swift */; };
+		AE76B0B11BF5AF6B00B9156E /* CompanyBeaconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE76B0B01BF5AF6B00B9156E /* CompanyBeaconCell.swift */; };
+		AE79D6B61C1A40FB005D1032 /* AddCompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE79D6B51C1A40FB005D1032 /* AddCompanyViewController.swift */; };
+		AE79D6B81C1A4127005D1032 /* LabelTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE79D6B71C1A4127005D1032 /* LabelTextFieldCell.swift */; };
+		AE7E4CA41BF41167001D508E /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7E4CA31BF41167001D508E /* Util.swift */; };
+		AEA557971C50319E000E9654 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA557961C50319E000E9654 /* ChatViewController.swift */; };
+		AEA5579C1C506480000E9654 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA5579B1C506480000E9654 /* SettingsViewController.swift */; };
+		AEB42FBE1C40541500213577 /* Colors.plist in Resources */ = {isa = PBXBuildFile; fileRef = AEB42FBD1C40541500213577 /* Colors.plist */; };
+		AEC05B5F1C6827DA00573953 /* BeaconDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC05B5E1C6827DA00573953 /* BeaconDataHandler.swift */; };
+		AEC05B721C682A9100573953 /* BeaconDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC05B5E1C6827DA00573953 /* BeaconDataHandler.swift */; };
+		AEC05B741C682A9A00573953 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD28EB01BD3144E003F57EC /* DataController.swift */; };
+		AEC05B751C682A9A00573953 /* Beacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD28EAE1BD3144E003F57EC /* Beacon.swift */; };
+		AEC05B761C682A9A00573953 /* Beacon+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD28EB21BD3144E003F57EC /* Beacon+CoreDataProperties.swift */; };
+		AEC05B771C682A9A00573953 /* BeaconState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD693DF1C07FDD10049CFFE /* BeaconState.swift */; };
+		AEC05B781C682A9A00573953 /* BeaconState+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD693DE1C07FDD10049CFFE /* BeaconState+CoreDataProperties.swift */; };
+		AEC05B791C682A9A00573953 /* BeaconType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3EFA6B1C5AEDE400A61D0A /* BeaconType.swift */; };
+		AEC05B7A1C682A9A00573953 /* BeaconType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3EFA6A1C5AEDE400A61D0A /* BeaconType+CoreDataProperties.swift */; };
+		AEC05B7B1C682A9A00573953 /* UrlContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD28EAF1BD3144E003F57EC /* UrlContent.swift */; };
+		AEC05B7C1C682A9A00573953 /* UrlContent+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD28EB11BD3144E003F57EC /* UrlContent+CoreDataProperties.swift */; };
+		AEC05B7D1C682A9A00573953 /* HashState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD28EB51BD3144E003F57EC /* HashState.swift */; };
+		AEC05B7E1C682A9A00573953 /* HashState+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD28EB61BD3144E003F57EC /* HashState+CoreDataProperties.swift */; };
+		AEC05B7F1C682A9A00573953 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E2C9D1C1003D70057C044 /* Company.swift */; };
+		AEC05B801C682A9A00573953 /* Company+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3E2C9C1C1003D70057C044 /* Company+CoreDataProperties.swift */; };
+		AEC05B811C682A9D00573953 /* BeaconModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5AD28EB31BD3144E003F57EC /* BeaconModel.xcdatamodeld */; };
+		AEC05B821C682AA300573953 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7E4CA31BF41167001D508E /* Util.swift */; };
+		AEC05B831C682AA300573953 /* String+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3ADDBF1C4CA58D009C3678 /* String+Utility.swift */; };
+		AEC05B841C682B0C00573953 /* BeaconSearchTv.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEC05B661C682A8A00573953 /* BeaconSearchTv.framework */; };
+		AEC05B851C682B0C00573953 /* BeaconSearchTv.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AEC05B661C682A8A00573953 /* BeaconSearchTv.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AECE19D11C76B7F60067E481 /* TextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECE19D01C76B7F60067E481 /* TextFieldCell.swift */; };
+		AECE19D31C76B80C0067E481 /* SwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECE19D21C76B80C0067E481 /* SwitchCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A2C0C141BD43BCC00612A6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AF41DCF1BA798450021E98D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AD28E8B1BD313B2003F57EC;
+			remoteInfo = BeaconSearch;
+		};
+		5ADE50921BD358AF009B8D24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AF41DCF1BA798450021E98D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AD28E8B1BD313B2003F57EC;
+			remoteInfo = BeaconSearch;
+		};
+		AEC05B861C682B0C00573953 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AF41DCF1BA798450021E98D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEC05B651C682A8A00573953;
+			remoteInfo = BeaconSearchTv;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5A2C0C161BD43BCD00612A6A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5A2C0C131BD43BCC00612A6A /* BeaconSearch.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AB0DC171BC6244100ABEA57 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEC05B881C682B0C00573953 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AEC05B851C682B0C00573953 /* BeaconSearchTv.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5A2B55F71C23A6230018E985 /* HeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		5A2C0C171BD43C3C00612A6A /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseCrashReporting.framework; path = BeaconSearchApp/ParseCrashReporting.framework; sourceTree = SOURCE_ROOT; };
+		5A2C0C1A1BD43C3C00612A6A /* ParseTwitterUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseTwitterUtils.framework; path = BeaconSearchApp/ParseTwitterUtils.framework; sourceTree = SOURCE_ROOT; };
+		5A2C0C1B1BD43C3C00612A6A /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = BeaconSearchApp/ParseUI.framework; sourceTree = SOURCE_ROOT; };
+		5A2C0C1C1BD43C3C00612A6A /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = BeaconSearchApp/Bolts.framework; sourceTree = SOURCE_ROOT; };
+		5A2C0C1D1BD43C3C00612A6A /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = BeaconSearchApp/Parse.framework; sourceTree = SOURCE_ROOT; };
+		5A2C0C251BD43F6300612A6A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5A2C0C271BD43F6A00612A6A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		5A2C0C291BD43F7700612A6A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5A2C0C2B1BD43F8300612A6A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5A2C0C2F1BD43FE700612A6A /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		5A2C0C311BD43FEF00612A6A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		5A2C0C331BD43FF500612A6A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		5A2C0C351BD43FFD00612A6A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		5A2C0C371BD4400600612A6A /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		5A2C0C391BD4401A00612A6A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5A2C0C3B1BD4402100612A6A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		5A2C0C3D1BD4402C00612A6A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		5A3E2C9C1C1003D70057C044 /* Company+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Company+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5A3E2C9D1C1003D70057C044 /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		5A3E2CA01C100AB50057C044 /* SelectCompanyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectCompanyViewController.swift; sourceTree = "<group>"; };
+		5AA86E631BE1CAC300067E6D /* ClosestBeaconsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosestBeaconsViewController.swift; sourceTree = "<group>"; };
+		5AB43C091C22645F003504DB /* BeaconCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconCell.swift; sourceTree = "<group>"; };
+		5AB43C0B1C22796E003504DB /* SelectCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectCell.swift; sourceTree = "<group>"; };
+		5AB43C0D1C22797D003504DB /* ColorPickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerCell.swift; sourceTree = "<group>"; };
+		5AB983C71BEC50BC003130A3 /* CompanyBeaconsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyBeaconsViewController.swift; sourceTree = "<group>"; };
+		5AC576731BA7A1B3001D1B39 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5AD28E8C1BD313B2003F57EC /* BeaconSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BeaconSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AD28E8E1BD313B2003F57EC /* BeaconSearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeaconSearch.h; sourceTree = "<group>"; };
+		5AD28E901BD313B2003F57EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AD28E9A1BD313FB003F57EC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5AD28E9B1BD313FB003F57EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5AD28E9D1BD313FB003F57EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5AD28E9F1BD313FB003F57EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5AD28EA01BD313FB003F57EC /* BeaconDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconDetailViewController.swift; sourceTree = "<group>"; };
+		5AD28EA11BD313FB003F57EC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AD28EA21BD313FB003F57EC /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5AD28EA31BD313FB003F57EC /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		5AD28EAC1BD3144E003F57EC /* FindBeacon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindBeacon.swift; sourceTree = "<group>"; };
+		5AD28EAD1BD3144E003F57EC /* BeaconManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconManager.swift; sourceTree = "<group>"; };
+		5AD28EAE1BD3144E003F57EC /* Beacon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beacon.swift; sourceTree = "<group>"; };
+		5AD28EAF1BD3144E003F57EC /* UrlContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlContent.swift; sourceTree = "<group>"; };
+		5AD28EB01BD3144E003F57EC /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		5AD28EB11BD3144E003F57EC /* UrlContent+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UrlContent+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5AD28EB21BD3144E003F57EC /* Beacon+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Beacon+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5AD28EB41BD3144E003F57EC /* BeaconModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BeaconModel.xcdatamodel; sourceTree = "<group>"; };
+		5AD28EB51BD3144E003F57EC /* HashState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashState.swift; sourceTree = "<group>"; };
+		5AD28EB61BD3144E003F57EC /* HashState+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HashState+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5AD619631BDF23B100B551A8 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		5AD619651BDF241A00B551A8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5AD693D21C0560C10049CFFE /* HTTPCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPCodes.h; sourceTree = "<group>"; };
+		5AD693D31C0560C10049CFFE /* KeenClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeenClient.h; sourceTree = "<group>"; };
+		5AD693D41C0560C10049CFFE /* KeenProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeenProperties.h; sourceTree = "<group>"; };
+		5AD693D51C0560C10049CFFE /* KIOEventStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIOEventStore.h; sourceTree = "<group>"; };
+		5AD693D61C0560C10049CFFE /* KIOQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIOQuery.h; sourceTree = "<group>"; };
+		5AD693D71C0560C10049CFFE /* KIOReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIOReachability.h; sourceTree = "<group>"; };
+		5AD693D81C0560C10049CFFE /* libKeenClient-Aggregate.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libKeenClient-Aggregate.a"; sourceTree = "<group>"; };
+		5AD693DE1C07FDD10049CFFE /* BeaconState+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BeaconState+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5AD693DF1C07FDD10049CFFE /* BeaconState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconState.swift; sourceTree = "<group>"; };
+		5AD916501BD46789005D1CE4 /* Apache License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Apache License.txt"; sourceTree = "<group>"; };
+		5AD916511BD46789005D1CE4 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		5AD916521BD46789005D1CE4 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		5AD916531BD46789005D1CE4 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		5AD916541BD46789005D1CE4 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		5AD916551BD46789005D1CE4 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		5AD916561BD46789005D1CE4 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		5AD916571BD46789005D1CE4 /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		5AD916581BD46789005D1CE4 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		5AD916591BD46789005D1CE4 /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		5AD9165A1BD46789005D1CE4 /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		5AD916661BD47008005D1CE4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5AD916681BD47107005D1CE4 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = BeaconSearchApp/FBSDKLoginKit.framework; sourceTree = SOURCE_ROOT; };
+		5AD916691BD47107005D1CE4 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = BeaconSearchApp/FBSDKCoreKit.framework; sourceTree = SOURCE_ROOT; };
+		5AD9166D1BD47271005D1CE4 /* BeaconSearchApp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BeaconSearchApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		5AD9166E1BD475E0005D1CE4 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = BeaconSearchApp/ParseFacebookUtils.framework; sourceTree = SOURCE_ROOT; };
+		5AD9166F1BD475E0005D1CE4 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtilsV4.framework; path = BeaconSearchApp/ParseFacebookUtilsV4.framework; sourceTree = SOURCE_ROOT; };
+		5ADE508C1BD358AF009B8D24 /* BeaconSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeaconSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ADE508E1BD358AF009B8D24 /* BeaconSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconSearchTests.swift; sourceTree = "<group>"; };
+		5ADE50901BD358AF009B8D24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AF41DD71BA798450021E98D /* Apengage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Apengage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AFAEDD81BDDAC7C0087AD24 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		AE18F7351C7D735900567797 /* ColorPicker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ColorPicker.storyboard; sourceTree = "<group>"; };
+		AE291EB71C61782E00D4D524 /* ConnectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectViewController.swift; sourceTree = "<group>"; };
+		AE291EB91C617FEB00D4D524 /* Chat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
+		AE291EBB1C61811D00D4D524 /* PeerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeerCell.swift; sourceTree = "<group>"; };
+		AE2B61771C5167D100FD0471 /* ColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPicker.swift; sourceTree = "<group>"; };
+		AE2B61781C5167D100FD0471 /* ColorPickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerController.swift; sourceTree = "<group>"; };
+		AE2B61791C5167D100FD0471 /* ColorWell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorWell.swift; sourceTree = "<group>"; };
+		AE2B617A1C5167D100FD0471 /* HuePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HuePicker.swift; sourceTree = "<group>"; };
+		AE2B617B1C5167D100FD0471 /* PickerImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerImage.swift; sourceTree = "<group>"; };
+		AE2B61811C51A37D00FD0471 /* ColorPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
+		AE3ADDBC1C4C4CD0009C3678 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		AE3ADDBF1C4CA58D009C3678 /* String+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Utility.swift"; sourceTree = "<group>"; };
+		AE3EFA6A1C5AEDE400A61D0A /* BeaconType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BeaconType+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AE3EFA6B1C5AEDE400A61D0A /* BeaconType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconType.swift; sourceTree = "<group>"; };
+		AE4A4F811C8503700016F0A2 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		AE59E6CC1C6D84EC002A1A4E /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		AE59E6CE1C6D8AB3002A1A4E /* UploadImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadImageCell.swift; sourceTree = "<group>"; };
+		AE6D94D71BE9A36D00B70740 /* FBAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBAnnotation.swift; sourceTree = "<group>"; };
+		AE6D94D81BE9A36D00B70740 /* FBAnnotationCluster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBAnnotationCluster.swift; sourceTree = "<group>"; };
+		AE6D94D91BE9A36D00B70740 /* FBAnnotationClusterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBAnnotationClusterView.swift; sourceTree = "<group>"; };
+		AE6D94DA1BE9A36D00B70740 /* FBBoundingBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBBoundingBox.swift; sourceTree = "<group>"; };
+		AE6D94DB1BE9A36D00B70740 /* FBClusteringManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBClusteringManager.swift; sourceTree = "<group>"; };
+		AE6D94DC1BE9A36D00B70740 /* FBQuadTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBQuadTree.swift; sourceTree = "<group>"; };
+		AE6D94DD1BE9A36D00B70740 /* FBQuadTreeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FBQuadTreeNode.swift; sourceTree = "<group>"; };
+		AE76B0B01BF5AF6B00B9156E /* CompanyBeaconCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyBeaconCell.swift; sourceTree = "<group>"; };
+		AE79D6B51C1A40FB005D1032 /* AddCompanyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCompanyViewController.swift; sourceTree = "<group>"; };
+		AE79D6B71C1A4127005D1032 /* LabelTextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelTextFieldCell.swift; sourceTree = "<group>"; };
+		AE7E4CA31BF41167001D508E /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		AEA557961C50319E000E9654 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		AEA5579B1C506480000E9654 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		AEB42FBD1C40541500213577 /* Colors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Colors.plist; sourceTree = "<group>"; };
+		AEC05B1A1C6818CF00573953 /* Proximity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Proximity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEC05B5E1C6827DA00573953 /* BeaconDataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconDataHandler.swift; sourceTree = "<group>"; };
+		AEC05B661C682A8A00573953 /* BeaconSearchTv.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BeaconSearchTv.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AECE19D01C76B7F60067E481 /* TextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldCell.swift; sourceTree = "<group>"; };
+		AECE19D21C76B80C0067E481 /* SwitchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5AD28E881BD313B2003F57EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ADE50891BD358AF009B8D24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ADE50911BD358AF009B8D24 /* BeaconSearch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AF41DD41BA798450021E98D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE3ADDBD1C4C4CD0009C3678 /* CoreBluetooth.framework in Frameworks */,
+				5A2C0C261BD43F6300612A6A /* CoreLocation.framework in Frameworks */,
+				5AD619661BDF241A00B551A8 /* MapKit.framework in Frameworks */,
+				5A2C0C3E1BD4402C00612A6A /* libsqlite3.tbd in Frameworks */,
+				5A2C0C3C1BD4402100612A6A /* libz.tbd in Frameworks */,
+				5A2C0C3A1BD4401A00612A6A /* SystemConfiguration.framework in Frameworks */,
+				5AD693D91C0560C10049CFFE /* libKeenClient-Aggregate.a in Frameworks */,
+				5A2C0C381BD4400600612A6A /* Social.framework in Frameworks */,
+				5A2C0C361BD43FFD00612A6A /* Security.framework in Frameworks */,
+				5A2C0C341BD43FF500612A6A /* CFNetwork.framework in Frameworks */,
+				5A2C0C321BD43FEF00612A6A /* AudioToolbox.framework in Frameworks */,
+				5A2C0C301BD43FE700612A6A /* Accounts.framework in Frameworks */,
+				5AD9166A1BD47107005D1CE4 /* FBSDKLoginKit.framework in Frameworks */,
+				5A2C0C2C1BD43F8300612A6A /* QuartzCore.framework in Frameworks */,
+				5A2C0C2A1BD43F7700612A6A /* CoreGraphics.framework in Frameworks */,
+				5A2C0C281BD43F6A00612A6A /* StoreKit.framework in Frameworks */,
+				5A2C0C121BD43BCC00612A6A /* BeaconSearch.framework in Frameworks */,
+				5A2C0C241BD43C3C00612A6A /* Parse.framework in Frameworks */,
+				5A2C0C1E1BD43C3C00612A6A /* ParseCrashReporting.framework in Frameworks */,
+				5AD916711BD475E0005D1CE4 /* ParseFacebookUtilsV4.framework in Frameworks */,
+				5A2C0C221BD43C3C00612A6A /* ParseUI.framework in Frameworks */,
+				5AC576741BA7A1B3001D1B39 /* CoreData.framework in Frameworks */,
+				5AD916701BD475E0005D1CE4 /* ParseFacebookUtils.framework in Frameworks */,
+				5A2C0C211BD43C3C00612A6A /* ParseTwitterUtils.framework in Frameworks */,
+				5AD9166B1BD47107005D1CE4 /* FBSDKCoreKit.framework in Frameworks */,
+				5A2C0C231BD43C3C00612A6A /* Bolts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEC05B171C6818CF00573953 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC05B841C682B0C00573953 /* BeaconSearchTv.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEC05B621C682A8A00573953 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5AB983C11BEC501E003130A3 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				5AD619631BDF23B100B551A8 /* MapViewController.swift */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		5AB983C21BEC5034003130A3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5AD916661BD47008005D1CE4 /* LoginViewController.swift */,
+				5AFAEDD81BDDAC7C0087AD24 /* MainTabBarController.swift */,
+				5AD28EA21BD313FB003F57EC /* ViewController.swift */,
+				5AD28EA31BD313FB003F57EC /* WebViewController.swift */,
+				5AB43C091C22645F003504DB /* BeaconCell.swift */,
+				5A2B55F71C23A6230018E985 /* HeaderCell.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		5AB983C31BEC5059003130A3 /* ClosestBeacons */ = {
+			isa = PBXGroup;
+			children = (
+				5AA86E631BE1CAC300067E6D /* ClosestBeaconsViewController.swift */,
+			);
+			name = ClosestBeacons;
+			sourceTree = "<group>";
+		};
+		5AB983C41BEC5079003130A3 /* CompanyBeacons */ = {
+			isa = PBXGroup;
+			children = (
+				5AB983C71BEC50BC003130A3 /* CompanyBeaconsViewController.swift */,
+				AE76B0B01BF5AF6B00B9156E /* CompanyBeaconCell.swift */,
+			);
+			name = CompanyBeacons;
+			sourceTree = "<group>";
+		};
+		5AC576751BA7A394001D1B39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE3ADDBC1C4C4CD0009C3678 /* CoreBluetooth.framework */,
+				5AD619651BDF241A00B551A8 /* MapKit.framework */,
+				5AD9166E1BD475E0005D1CE4 /* ParseFacebookUtils.framework */,
+				5AD9166F1BD475E0005D1CE4 /* ParseFacebookUtilsV4.framework */,
+				5AD916681BD47107005D1CE4 /* FBSDKLoginKit.framework */,
+				5AD916691BD47107005D1CE4 /* FBSDKCoreKit.framework */,
+				5A2C0C3D1BD4402C00612A6A /* libsqlite3.tbd */,
+				5A2C0C3B1BD4402100612A6A /* libz.tbd */,
+				5A2C0C391BD4401A00612A6A /* SystemConfiguration.framework */,
+				5A2C0C371BD4400600612A6A /* Social.framework */,
+				5A2C0C351BD43FFD00612A6A /* Security.framework */,
+				5A2C0C331BD43FF500612A6A /* CFNetwork.framework */,
+				5A2C0C311BD43FEF00612A6A /* AudioToolbox.framework */,
+				5A2C0C2F1BD43FE700612A6A /* Accounts.framework */,
+				5A2C0C2B1BD43F8300612A6A /* QuartzCore.framework */,
+				5A2C0C291BD43F7700612A6A /* CoreGraphics.framework */,
+				5A2C0C271BD43F6A00612A6A /* StoreKit.framework */,
+				5A2C0C251BD43F6300612A6A /* CoreLocation.framework */,
+				5A2C0C171BD43C3C00612A6A /* ParseCrashReporting.framework */,
+				5A2C0C1A1BD43C3C00612A6A /* ParseTwitterUtils.framework */,
+				5A2C0C1B1BD43C3C00612A6A /* ParseUI.framework */,
+				5A2C0C1C1BD43C3C00612A6A /* Bolts.framework */,
+				5A2C0C1D1BD43C3C00612A6A /* Parse.framework */,
+				5AC576731BA7A1B3001D1B39 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			path = FindBeaconTest;
+			sourceTree = "<group>";
+		};
+		5AD28E8D1BD313B2003F57EC /* BeaconSearch */ = {
+			isa = PBXGroup;
+			children = (
+				5AD28E8E1BD313B2003F57EC /* BeaconSearch.h */,
+				AEC05B5E1C6827DA00573953 /* BeaconDataHandler.swift */,
+				5AD28EAC1BD3144E003F57EC /* FindBeacon.swift */,
+				5AD28EAD1BD3144E003F57EC /* BeaconManager.swift */,
+				5AD28EC11BD314FF003F57EC /* DataModel */,
+				AE3ADDBE1C4CA524009C3678 /* Extensions */,
+				5AD28E901BD313B2003F57EC /* Info.plist */,
+			);
+			path = BeaconSearch;
+			sourceTree = "<group>";
+		};
+		5AD28E991BD313FB003F57EC /* BeaconSearchApp */ = {
+			isa = PBXGroup;
+			children = (
+				5AD28E9A1BD313FB003F57EC /* AppDelegate.swift */,
+				5AB983C21BEC5034003130A3 /* Main */,
+				AEA557951C503121000E9654 /* Chat */,
+				AE79D6B41C1A40C2005D1032 /* BeaconDetail */,
+				5AB983C31BEC5059003130A3 /* ClosestBeacons */,
+				5AB983C11BEC501E003130A3 /* Map */,
+				5AB983C41BEC5079003130A3 /* CompanyBeacons */,
+				AEA557981C506432000E9654 /* Settings */,
+				5AD28E9E1BD313FB003F57EC /* Main.storyboard */,
+				5AD28E9C1BD313FB003F57EC /* LaunchScreen.storyboard */,
+				5AD28E9B1BD313FB003F57EC /* Assets.xcassets */,
+				AE2B61761C5167BF00FD0471 /* SwiftColorPicker */,
+				AE6D94D61BE9A35400B70740 /* FBAnnotationClustering */,
+				5AD693D11C0560C10049CFFE /* KeenClient */,
+				5AD9164E1BD46771005D1CE4 /* Supporting Files */,
+			);
+			path = BeaconSearchApp;
+			sourceTree = "<group>";
+		};
+		5AD28EC11BD314FF003F57EC /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				5AD28EB01BD3144E003F57EC /* DataController.swift */,
+				5AD28EAE1BD3144E003F57EC /* Beacon.swift */,
+				5AD28EB21BD3144E003F57EC /* Beacon+CoreDataProperties.swift */,
+				5AD693DF1C07FDD10049CFFE /* BeaconState.swift */,
+				5AD693DE1C07FDD10049CFFE /* BeaconState+CoreDataProperties.swift */,
+				AE3EFA6B1C5AEDE400A61D0A /* BeaconType.swift */,
+				AE3EFA6A1C5AEDE400A61D0A /* BeaconType+CoreDataProperties.swift */,
+				5AD28EAF1BD3144E003F57EC /* UrlContent.swift */,
+				5AD28EB11BD3144E003F57EC /* UrlContent+CoreDataProperties.swift */,
+				5AD28EB51BD3144E003F57EC /* HashState.swift */,
+				5AD28EB61BD3144E003F57EC /* HashState+CoreDataProperties.swift */,
+				5A3E2C9D1C1003D70057C044 /* Company.swift */,
+				5A3E2C9C1C1003D70057C044 /* Company+CoreDataProperties.swift */,
+				5AD28EB31BD3144E003F57EC /* BeaconModel.xcdatamodeld */,
+			);
+			name = DataModel;
+			sourceTree = "<group>";
+		};
+		5AD693D11C0560C10049CFFE /* KeenClient */ = {
+			isa = PBXGroup;
+			children = (
+				5AD693D21C0560C10049CFFE /* HTTPCodes.h */,
+				5AD693D31C0560C10049CFFE /* KeenClient.h */,
+				5AD693D41C0560C10049CFFE /* KeenProperties.h */,
+				5AD693D51C0560C10049CFFE /* KIOEventStore.h */,
+				5AD693D61C0560C10049CFFE /* KIOQuery.h */,
+				5AD693D71C0560C10049CFFE /* KIOReachability.h */,
+				5AD693D81C0560C10049CFFE /* libKeenClient-Aggregate.a */,
+			);
+			path = KeenClient;
+			sourceTree = "<group>";
+		};
+		5AD9164E1BD46771005D1CE4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5AD9166D1BD47271005D1CE4 /* BeaconSearchApp-Bridging-Header.h */,
+				5AD9164F1BD46789005D1CE4 /* open-sans */,
+				5AD28EA11BD313FB003F57EC /* Info.plist */,
+				AEB42FBD1C40541500213577 /* Colors.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5AD9164F1BD46789005D1CE4 /* open-sans */ = {
+			isa = PBXGroup;
+			children = (
+				5AD916501BD46789005D1CE4 /* Apache License.txt */,
+				5AD916511BD46789005D1CE4 /* OpenSans-Bold.ttf */,
+				5AD916521BD46789005D1CE4 /* OpenSans-BoldItalic.ttf */,
+				5AD916531BD46789005D1CE4 /* OpenSans-ExtraBold.ttf */,
+				5AD916541BD46789005D1CE4 /* OpenSans-ExtraBoldItalic.ttf */,
+				5AD916551BD46789005D1CE4 /* OpenSans-Italic.ttf */,
+				5AD916561BD46789005D1CE4 /* OpenSans-Light.ttf */,
+				5AD916571BD46789005D1CE4 /* OpenSans-LightItalic.ttf */,
+				5AD916581BD46789005D1CE4 /* OpenSans-Regular.ttf */,
+				5AD916591BD46789005D1CE4 /* OpenSans-Semibold.ttf */,
+				5AD9165A1BD46789005D1CE4 /* OpenSans-SemiboldItalic.ttf */,
+			);
+			path = "open-sans";
+			sourceTree = "<group>";
+		};
+		5ADE508D1BD358AF009B8D24 /* BeaconSearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				5ADE508E1BD358AF009B8D24 /* BeaconSearchTests.swift */,
+				5ADE50901BD358AF009B8D24 /* Info.plist */,
+			);
+			path = BeaconSearchTests;
+			sourceTree = "<group>";
+		};
+		5AF41DCE1BA798450021E98D = {
+			isa = PBXGroup;
+			children = (
+				5AD28E991BD313FB003F57EC /* BeaconSearchApp */,
+				5AD28E8D1BD313B2003F57EC /* BeaconSearch */,
+				5ADE508D1BD358AF009B8D24 /* BeaconSearchTests */,
+				5AC576751BA7A394001D1B39 /* Frameworks */,
+				5AF41DD81BA798450021E98D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5AF41DD81BA798450021E98D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5AF41DD71BA798450021E98D /* Apengage.app */,
+				5AD28E8C1BD313B2003F57EC /* BeaconSearch.framework */,
+				5ADE508C1BD358AF009B8D24 /* BeaconSearchTests.xctest */,
+				AEC05B1A1C6818CF00573953 /* Proximity.app */,
+				AEC05B661C682A8A00573953 /* BeaconSearchTv.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE2B61761C5167BF00FD0471 /* SwiftColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				AE2B61811C51A37D00FD0471 /* ColorPickerViewController.swift */,
+				AE2B61781C5167D100FD0471 /* ColorPickerController.swift */,
+				AE2B61771C5167D100FD0471 /* ColorPicker.swift */,
+				AE2B61791C5167D100FD0471 /* ColorWell.swift */,
+				AE2B617A1C5167D100FD0471 /* HuePicker.swift */,
+				AE2B617B1C5167D100FD0471 /* PickerImage.swift */,
+			);
+			name = SwiftColorPicker;
+			sourceTree = "<group>";
+		};
+		AE3ADDBE1C4CA524009C3678 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AE7E4CA31BF41167001D508E /* Util.swift */,
+				AE3ADDBF1C4CA58D009C3678 /* String+Utility.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		AE6D94D61BE9A35400B70740 /* FBAnnotationClustering */ = {
+			isa = PBXGroup;
+			children = (
+				AE6D94D71BE9A36D00B70740 /* FBAnnotation.swift */,
+				AE6D94D81BE9A36D00B70740 /* FBAnnotationCluster.swift */,
+				AE6D94D91BE9A36D00B70740 /* FBAnnotationClusterView.swift */,
+				AE6D94DA1BE9A36D00B70740 /* FBBoundingBox.swift */,
+				AE6D94DB1BE9A36D00B70740 /* FBClusteringManager.swift */,
+				AE6D94DC1BE9A36D00B70740 /* FBQuadTree.swift */,
+				AE6D94DD1BE9A36D00B70740 /* FBQuadTreeNode.swift */,
+			);
+			name = FBAnnotationClustering;
+			sourceTree = "<group>";
+		};
+		AE79D6B41C1A40C2005D1032 /* BeaconDetail */ = {
+			isa = PBXGroup;
+			children = (
+				5AD28EA01BD313FB003F57EC /* BeaconDetailViewController.swift */,
+				5A3E2CA01C100AB50057C044 /* SelectCompanyViewController.swift */,
+				AE79D6B51C1A40FB005D1032 /* AddCompanyViewController.swift */,
+				AE79D6B71C1A4127005D1032 /* LabelTextFieldCell.swift */,
+				5AB43C0B1C22796E003504DB /* SelectCell.swift */,
+				5AB43C0D1C22797D003504DB /* ColorPickerCell.swift */,
+				AE18F7351C7D735900567797 /* ColorPicker.storyboard */,
+			);
+			name = BeaconDetail;
+			sourceTree = "<group>";
+		};
+		AEA557951C503121000E9654 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				AEA557961C50319E000E9654 /* ChatViewController.swift */,
+				AE291EB71C61782E00D4D524 /* ConnectViewController.swift */,
+				AE291EBB1C61811D00D4D524 /* PeerCell.swift */,
+				AE4A4F811C8503700016F0A2 /* MessageCell.swift */,
+				AE291EB91C617FEB00D4D524 /* Chat.storyboard */,
+			);
+			name = Chat;
+			sourceTree = "<group>";
+		};
+		AEA557981C506432000E9654 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				AEA5579B1C506480000E9654 /* SettingsViewController.swift */,
+				AE59E6CE1C6D8AB3002A1A4E /* UploadImageCell.swift */,
+				AECE19D01C76B7F60067E481 /* TextFieldCell.swift */,
+				AECE19D21C76B80C0067E481 /* SwitchCell.swift */,
+				AE59E6CC1C6D84EC002A1A4E /* Settings.storyboard */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5AD28E891BD313B2003F57EC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AD28E8F1BD313B2003F57EC /* BeaconSearch.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEC05B631C682A8A00573953 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5AD28E8B1BD313B2003F57EC /* BeaconSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AD28E951BD313B2003F57EC /* Build configuration list for PBXNativeTarget "BeaconSearch" */;
+			buildPhases = (
+				5AD28E871BD313B2003F57EC /* Sources */,
+				5AD28E881BD313B2003F57EC /* Frameworks */,
+				5AD28E891BD313B2003F57EC /* Headers */,
+				5AD28E8A1BD313B2003F57EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeaconSearch;
+			productName = BeaconSearch;
+			productReference = 5AD28E8C1BD313B2003F57EC /* BeaconSearch.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5ADE508B1BD358AF009B8D24 /* BeaconSearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5ADE50961BD358AF009B8D24 /* Build configuration list for PBXNativeTarget "BeaconSearchTests" */;
+			buildPhases = (
+				5ADE50881BD358AF009B8D24 /* Sources */,
+				5ADE50891BD358AF009B8D24 /* Frameworks */,
+				5ADE508A1BD358AF009B8D24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5ADE50931BD358AF009B8D24 /* PBXTargetDependency */,
+			);
+			name = BeaconSearchTests;
+			productName = BeaconSearchTests;
+			productReference = 5ADE508C1BD358AF009B8D24 /* BeaconSearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5AF41DD61BA798450021E98D /* BeaconSearchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AF41DE91BA798450021E98D /* Build configuration list for PBXNativeTarget "BeaconSearchApp" */;
+			buildPhases = (
+				5AF41DD31BA798450021E98D /* Sources */,
+				5AF41DD41BA798450021E98D /* Frameworks */,
+				5AF41DD51BA798450021E98D /* Resources */,
+				5AB0DC171BC6244100ABEA57 /* Embed Frameworks */,
+				5A2C0C161BD43BCD00612A6A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A2C0C151BD43BCC00612A6A /* PBXTargetDependency */,
+			);
+			name = BeaconSearchApp;
+			productName = FindBeaconTest;
+			productReference = 5AF41DD71BA798450021E98D /* Apengage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AEC05B191C6818CF00573953 /* BeaconSearchTvApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEC05B2A1C6818CF00573953 /* Build configuration list for PBXNativeTarget "BeaconSearchTvApp" */;
+			buildPhases = (
+				AEC05B161C6818CF00573953 /* Sources */,
+				AEC05B171C6818CF00573953 /* Frameworks */,
+				AEC05B181C6818CF00573953 /* Resources */,
+				AEC05B881C682B0C00573953 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AEC05B871C682B0C00573953 /* PBXTargetDependency */,
+			);
+			name = BeaconSearchTvApp;
+			productName = BeaconSearchTvApp;
+			productReference = AEC05B1A1C6818CF00573953 /* Proximity.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AEC05B651C682A8A00573953 /* BeaconSearchTv */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEC05B6F1C682A8A00573953 /* Build configuration list for PBXNativeTarget "BeaconSearchTv" */;
+			buildPhases = (
+				AEC05B611C682A8A00573953 /* Sources */,
+				AEC05B621C682A8A00573953 /* Frameworks */,
+				AEC05B631C682A8A00573953 /* Headers */,
+				AEC05B641C682A8A00573953 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeaconSearchTv;
+			productName = BeaconSearchTv;
+			productReference = AEC05B661C682A8A00573953 /* BeaconSearchTv.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5AF41DCF1BA798450021E98D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Ap1;
+				TargetAttributes = {
+					5AD28E8B1BD313B2003F57EC = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					5ADE508B1BD358AF009B8D24 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					5AF41DD61BA798450021E98D = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 972NZX94VZ;
+					};
+					AEC05B191C6818CF00573953 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					AEC05B651C682A8A00573953 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 5AF41DD21BA798450021E98D /* Build configuration list for PBXProject "BeaconSearchApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5AF41DCE1BA798450021E98D;
+			productRefGroup = 5AF41DD81BA798450021E98D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5AF41DD61BA798450021E98D /* BeaconSearchApp */,
+				5AD28E8B1BD313B2003F57EC /* BeaconSearch */,
+				5ADE508B1BD358AF009B8D24 /* BeaconSearchTests */,
+				AEC05B191C6818CF00573953 /* BeaconSearchTvApp */,
+				AEC05B651C682A8A00573953 /* BeaconSearchTv */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5AD28E8A1BD313B2003F57EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ADE508A1BD358AF009B8D24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AF41DD51BA798450021E98D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AD916601BD46789005D1CE4 /* OpenSans-Italic.ttf in Resources */,
+				AE59E6CD1C6D84EC002A1A4E /* Settings.storyboard in Resources */,
+				5AD9165D1BD46789005D1CE4 /* OpenSans-BoldItalic.ttf in Resources */,
+				5AD28EA71BD313FB003F57EC /* Main.storyboard in Resources */,
+				AE18F7361C7D735900567797 /* ColorPicker.storyboard in Resources */,
+				5AD916641BD46789005D1CE4 /* OpenSans-Semibold.ttf in Resources */,
+				5AD9165E1BD46789005D1CE4 /* OpenSans-ExtraBold.ttf in Resources */,
+				5AD9165B1BD46789005D1CE4 /* Apache License.txt in Resources */,
+				AE291EBA1C617FEB00D4D524 /* Chat.storyboard in Resources */,
+				5AD916621BD46789005D1CE4 /* OpenSans-LightItalic.ttf in Resources */,
+				5AD28EA51BD313FB003F57EC /* Assets.xcassets in Resources */,
+				5AD9165C1BD46789005D1CE4 /* OpenSans-Bold.ttf in Resources */,
+				5AD28EA61BD313FB003F57EC /* LaunchScreen.storyboard in Resources */,
+				5AD916651BD46789005D1CE4 /* OpenSans-SemiboldItalic.ttf in Resources */,
+				5AD916611BD46789005D1CE4 /* OpenSans-Light.ttf in Resources */,
+				AEB42FBE1C40541500213577 /* Colors.plist in Resources */,
+				5AD916631BD46789005D1CE4 /* OpenSans-Regular.ttf in Resources */,
+				5AD9165F1BD46789005D1CE4 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEC05B181C6818CF00573953 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEC05B641C682A8A00573953 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5AD28E871BD313B2003F57EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC05B5F1C6827DA00573953 /* BeaconDataHandler.swift in Sources */,
+				AE7E4CA41BF41167001D508E /* Util.swift in Sources */,
+				5AD28EBF1BD3144E003F57EC /* HashState.swift in Sources */,
+				5AD28EC01BD3144E003F57EC /* HashState+CoreDataProperties.swift in Sources */,
+				5AD28EBD1BD3144E003F57EC /* Beacon+CoreDataProperties.swift in Sources */,
+				5AD28EBE1BD3144E003F57EC /* BeaconModel.xcdatamodeld in Sources */,
+				AE3ADDC01C4CA58D009C3678 /* String+Utility.swift in Sources */,
+				5AD28EBB1BD3144E003F57EC /* DataController.swift in Sources */,
+				5A3E2C9E1C1003D70057C044 /* Company+CoreDataProperties.swift in Sources */,
+				AE3EFA6C1C5AEDE400A61D0A /* BeaconType+CoreDataProperties.swift in Sources */,
+				5AD28EB71BD3144E003F57EC /* FindBeacon.swift in Sources */,
+				5A3E2C9F1C1003D70057C044 /* Company.swift in Sources */,
+				AE3EFA6D1C5AEDE400A61D0A /* BeaconType.swift in Sources */,
+				5AD693E01C07FDD10049CFFE /* BeaconState+CoreDataProperties.swift in Sources */,
+				5AD28EBA1BD3144E003F57EC /* UrlContent.swift in Sources */,
+				5AD28EBC1BD3144E003F57EC /* UrlContent+CoreDataProperties.swift in Sources */,
+				5AD28EB81BD3144E003F57EC /* BeaconManager.swift in Sources */,
+				5AD693E11C07FDD10049CFFE /* BeaconState.swift in Sources */,
+				5AD28EB91BD3144E003F57EC /* Beacon.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5ADE50881BD358AF009B8D24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ADE508F1BD358AF009B8D24 /* BeaconSearchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AF41DD31BA798450021E98D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE2B617F1C5167D100FD0471 /* HuePicker.swift in Sources */,
+				5AD28EAA1BD313FB003F57EC /* ViewController.swift in Sources */,
+				AE6D94E11BE9A36D00B70740 /* FBBoundingBox.swift in Sources */,
+				5AD28EA81BD313FB003F57EC /* BeaconDetailViewController.swift in Sources */,
+				5AFAEDD91BDDAC7C0087AD24 /* MainTabBarController.swift in Sources */,
+				5A2B55F81C23A6230018E985 /* HeaderCell.swift in Sources */,
+				AECE19D31C76B80C0067E481 /* SwitchCell.swift in Sources */,
+				AE79D6B81C1A4127005D1032 /* LabelTextFieldCell.swift in Sources */,
+				AE2B61801C5167D100FD0471 /* PickerImage.swift in Sources */,
+				AE59E6CF1C6D8AB3002A1A4E /* UploadImageCell.swift in Sources */,
+				AE76B0B11BF5AF6B00B9156E /* CompanyBeaconCell.swift in Sources */,
+				AE2B617E1C5167D100FD0471 /* ColorWell.swift in Sources */,
+				5AB43C0A1C22645F003504DB /* BeaconCell.swift in Sources */,
+				AE6D94E01BE9A36D00B70740 /* FBAnnotationClusterView.swift in Sources */,
+				AE6D94E41BE9A36D00B70740 /* FBQuadTreeNode.swift in Sources */,
+				AE291EBC1C61811D00D4D524 /* PeerCell.swift in Sources */,
+				5AD28EA41BD313FB003F57EC /* AppDelegate.swift in Sources */,
+				5A3E2CA11C100AB50057C044 /* SelectCompanyViewController.swift in Sources */,
+				AE291EB81C61782E00D4D524 /* ConnectViewController.swift in Sources */,
+				5AA86E641BE1CAC300067E6D /* ClosestBeaconsViewController.swift in Sources */,
+				5AD916671BD47008005D1CE4 /* LoginViewController.swift in Sources */,
+				AE79D6B61C1A40FB005D1032 /* AddCompanyViewController.swift in Sources */,
+				AE2B617D1C5167D100FD0471 /* ColorPickerController.swift in Sources */,
+				5AD28EAB1BD313FB003F57EC /* WebViewController.swift in Sources */,
+				AECE19D11C76B7F60067E481 /* TextFieldCell.swift in Sources */,
+				5AD619641BDF23B100B551A8 /* MapViewController.swift in Sources */,
+				5AB983C81BEC50BC003130A3 /* CompanyBeaconsViewController.swift in Sources */,
+				AE2B61821C51A37D00FD0471 /* ColorPickerViewController.swift in Sources */,
+				AEA557971C50319E000E9654 /* ChatViewController.swift in Sources */,
+				AE4A4F821C8503700016F0A2 /* MessageCell.swift in Sources */,
+				AE6D94E31BE9A36D00B70740 /* FBQuadTree.swift in Sources */,
+				AE6D94DE1BE9A36D00B70740 /* FBAnnotation.swift in Sources */,
+				5AB43C0C1C22796E003504DB /* SelectCell.swift in Sources */,
+				AE6D94DF1BE9A36D00B70740 /* FBAnnotationCluster.swift in Sources */,
+				AE2B617C1C5167D100FD0471 /* ColorPicker.swift in Sources */,
+				AEA5579C1C506480000E9654 /* SettingsViewController.swift in Sources */,
+				5AB43C0E1C22797D003504DB /* ColorPickerCell.swift in Sources */,
+				AE6D94E21BE9A36D00B70740 /* FBClusteringManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEC05B161C6818CF00573953 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEC05B611C682A8A00573953 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEC05B761C682A9A00573953 /* Beacon+CoreDataProperties.swift in Sources */,
+				AEC05B781C682A9A00573953 /* BeaconState+CoreDataProperties.swift in Sources */,
+				AEC05B721C682A9100573953 /* BeaconDataHandler.swift in Sources */,
+				AEC05B7D1C682A9A00573953 /* HashState.swift in Sources */,
+				AEC05B7A1C682A9A00573953 /* BeaconType+CoreDataProperties.swift in Sources */,
+				AEC05B741C682A9A00573953 /* DataController.swift in Sources */,
+				AEC05B821C682AA300573953 /* Util.swift in Sources */,
+				AEC05B771C682A9A00573953 /* BeaconState.swift in Sources */,
+				AEC05B7C1C682A9A00573953 /* UrlContent+CoreDataProperties.swift in Sources */,
+				AEC05B801C682A9A00573953 /* Company+CoreDataProperties.swift in Sources */,
+				AEC05B811C682A9D00573953 /* BeaconModel.xcdatamodeld in Sources */,
+				AEC05B7E1C682A9A00573953 /* HashState+CoreDataProperties.swift in Sources */,
+				AEC05B791C682A9A00573953 /* BeaconType.swift in Sources */,
+				AEC05B7F1C682A9A00573953 /* Company.swift in Sources */,
+				AEC05B831C682AA300573953 /* String+Utility.swift in Sources */,
+				AEC05B751C682A9A00573953 /* Beacon.swift in Sources */,
+				AEC05B7B1C682A9A00573953 /* UrlContent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A2C0C151BD43BCC00612A6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AD28E8B1BD313B2003F57EC /* BeaconSearch */;
+			targetProxy = 5A2C0C141BD43BCC00612A6A /* PBXContainerItemProxy */;
+		};
+		5ADE50931BD358AF009B8D24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AD28E8B1BD313B2003F57EC /* BeaconSearch */;
+			targetProxy = 5ADE50921BD358AF009B8D24 /* PBXContainerItemProxy */;
+		};
+		AEC05B871C682B0C00573953 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AEC05B651C682A8A00573953 /* BeaconSearchTv */;
+			targetProxy = AEC05B861C682B0C00573953 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5AD28E9C1BD313FB003F57EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5AD28E9D1BD313FB003F57EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5AD28E9E1BD313FB003F57EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5AD28E9F1BD313FB003F57EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5AD28E961BD313B2003F57EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BeaconSearch/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ap1.BeaconSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5AD28E971BD313B2003F57EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BeaconSearch/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ap1.BeaconSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5ADE50941BD358AF009B8D24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BeaconSearchTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ap1.BeaconSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5ADE50951BD358AF009B8D24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BeaconSearchTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ap1.BeaconSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5AF41DE71BA798450021E98D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5AF41DE81BA798450021E98D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5AF41DEA1BA798450021E98D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BeaconSearch",
+					"$(PROJECT_DIR)/BeaconSearchApp",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = BeaconSearchApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BeaconSearchApp/KeenClient",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = io.ap1.proximity;
+				PRODUCT_NAME = Apengage;
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "BeaconSearchApp/BeaconSearchApp-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5AF41DEB1BA798450021E98D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BeaconSearch",
+					"$(PROJECT_DIR)/BeaconSearchApp",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = BeaconSearchApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BeaconSearchApp/KeenClient",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = io.ap1.proximity;
+				PRODUCT_NAME = Apengage;
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "BeaconSearchApp/BeaconSearchApp-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AEC05B281C6818CF00573953 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/BeaconSearch",
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = BeaconSearchTvApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ap1.BeaconSearchTvApp;
+				PRODUCT_NAME = Proximity;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		AEC05B291C6818CF00573953 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/BeaconSearch",
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = BeaconSearchTvApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ap1.BeaconSearchTvApp;
+				PRODUCT_NAME = Proximity;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
+		AEC05B701C682A8A00573953 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BeaconSearchTv/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ap1.BeaconSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AEC05B711C682A8A00573953 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BeaconSearchTv/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ap1.BeaconSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5AD28E951BD313B2003F57EC /* Build configuration list for PBXNativeTarget "BeaconSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AD28E961BD313B2003F57EC /* Debug */,
+				5AD28E971BD313B2003F57EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5ADE50961BD358AF009B8D24 /* Build configuration list for PBXNativeTarget "BeaconSearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5ADE50941BD358AF009B8D24 /* Debug */,
+				5ADE50951BD358AF009B8D24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AF41DD21BA798450021E98D /* Build configuration list for PBXProject "BeaconSearchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AF41DE71BA798450021E98D /* Debug */,
+				5AF41DE81BA798450021E98D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AF41DE91BA798450021E98D /* Build configuration list for PBXNativeTarget "BeaconSearchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AF41DEA1BA798450021E98D /* Debug */,
+				5AF41DEB1BA798450021E98D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEC05B2A1C6818CF00573953 /* Build configuration list for PBXNativeTarget "BeaconSearchTvApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEC05B281C6818CF00573953 /* Debug */,
+				AEC05B291C6818CF00573953 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEC05B6F1C682A8A00573953 /* Build configuration list for PBXNativeTarget "BeaconSearchTv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEC05B701C682A8A00573953 /* Debug */,
+				AEC05B711C682A8A00573953 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5AD28EB31BD3144E003F57EC /* BeaconModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5AD28EB41BD3144E003F57EC /* BeaconModel.xcdatamodel */,
+			);
+			currentVersion = 5AD28EB41BD3144E003F57EC /* BeaconModel.xcdatamodel */;
+			path = BeaconModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5AF41DCF1BA798450021E98D /* Project object */;
+}
